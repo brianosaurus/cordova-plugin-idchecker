@@ -1,0 +1,17 @@
+!.keep
+*.DS_Store
+*.swo
+*.swp
+.bundle
+.sass-cache/
+bin/stubs
+coverage/*
+db/*.sqlite3
+log/*
+public/system
+rerun.txt
+tags
+tmp/*
+tmp/**/*
+public/assets
+tmp/pids/*
