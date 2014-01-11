@@ -78,7 +78,6 @@
 
 - (void)captureCredentials:(CDVInvokedUrlCommand *)command
 {
-    CDVPluginResult *pluginResult;
     
     NSString *country = [command.arguments objectAtIndex:0];
     NSString *type = [command.arguments objectAtIndex:1];
@@ -112,36 +111,66 @@
                 if(error)
                 {
                     [self showWait:NO];
-                    [self.webView stringByEvaluatingJavaScriptFromString:@"ImageUploadError()"];
-                }else{
+                    CDVPluginResult *res = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
+                    [self.commandDelegate sendPluginResult:res callbackId:command.callbackId];
+                } else {
                     [[IDCheckerSDK shared] closeRecordForGuid:doc.guid block:^(NSError *error) {
                         if(error) {
                             [self showWait:NO];
                             
                             // Call error callback
-                            [self.webView stringByEvaluatingJavaScriptFromString:@"ImageUploadError()"];
-                        } else{
+                            CDVPluginResult *res = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
+                            [self.commandDelegate sendPluginResult:res callbackId:command.callbackId];
+                        } else {
                             // Start polling for more data
                             [[IDCheckerSDK shared] startPollingForMoreAccurateData:_currentDoc pollingResultBlock:^(IDCDocument *result) {
                                 //we got a result;
                                 [self showWait:NO];
+
+                                
+                                NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+                                [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+                                
+                                // turn the images into something we can handle/post back to the server to save
+                                NSData *origImageData = UIImageJPEGRepresentation(result.originalImage, 1.0);
+                                NSData *passPhotoData = UIImageJPEGRepresentation(result.passPhoto, 1.0);
+                                NSData *processedImageData = UIImageJPEGRepresentation(result.processedImage, 1.0);
+                                NSString *origImage64 = [origImageData base64Encoding];
+                                NSString *passPhoto64 = [passPhotoData base64Encoding];
+                                NSString *processed64 = [processedImageData base64Encoding];
+                                
+                                NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithCapacity:17];
+                                if (result.clientRef) [dict setObject:result.clientRef forKey:@"ClientRef"];
+                                if (result.firstName) [dict setObject:result.firstName forKey:@"FirstName"];
+                                if (result.lastName) [dict setObject:result.lastName forKey:@"LastName"];
+                                if (result.address1) [dict setObject:result.address1 forKey:@"Address1"];
+                                if (result.address2) [dict setObject:result.address2 forKey:@"Address2"];
+                                if (result.doB) [dict setObject:[dateFormatter stringFromDate:result.doB] forKey:@"DOB"];
+                                if (result.expDate) [dict setObject:[dateFormatter stringFromDate:result.expDate] forKey:@"Expiration"];
+                                if (result.countryResultAbbrevation) [dict setObject:result.countryResultAbbrevation forKey:@"Country"];
+                                if (result.socialSecurityNumber) [dict setObject:result.socialSecurityNumber forKey:@"SSN"];
+                                if (result.documentNumber) [dict setObject:result.documentNumber forKey:@"DocumentNumber"];
+                                if (result.issueDate) [dict setObject:[dateFormatter stringFromDate:result.issueDate] forKey:@"IssueDate"];
+                                if (passPhoto64) [dict setObject:passPhoto64 forKey:@"PassPhoto"];
+                                if (origImage64) [dict setObject:origImage64 forKey:@"OrigPhoto"];
+                                if (processed64) [dict setObject:processed64 forKey:@"ProcessedPhoto"];
+                                if (result.nationality) [dict setObject:result.nationality forKey:@"Nationality"];
+                                if (result.guid) [dict setObject:result.guid forKey:@"GUID"];
                                 
                                 // build result into data structure to return via callback
+                                CDVPluginResult *res = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:dict];
+                                [self.commandDelegate sendPluginResult:res callbackId:command.callbackId];
                             }];
-                            
                         }
                     }];
                 }
             }];
-        }else{
+        } else {
             // Call error Callback
-            [self.webView stringByEvaluatingJavaScriptFromString:@"ErrorTakingPicture()"];
+            CDVPluginResult *res = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
+            [self.commandDelegate sendPluginResult:res callbackId:command.callbackId];
         }
     }];
-    
-    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
 
