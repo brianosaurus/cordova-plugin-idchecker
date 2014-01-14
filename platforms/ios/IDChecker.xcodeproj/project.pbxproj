@@ -30,12 +30,12 @@
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
 		5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE5B34173C68D80009041E /* CoreLocation.framework */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
-		D3A2DF351880BA450096FCF7 /* IDCheckerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF341880BA450096FCF7 /* IDCheckerSDK.framework */; };
+		D354C2301885C37600E9A4F2 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D354C22F1885C37600E9A4F2 /* opencv2.framework */; };
+		D354C2321885C38400E9A4F2 /* IDCheckerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D354C2311885C38400E9A4F2 /* IDCheckerSDK.framework */; };
 		D3A2DF371880BA5F0096FCF7 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF361880BA5F0096FCF7 /* ImageIO.framework */; };
 		D3A2DF391880BA6A0096FCF7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF381880BA6A0096FCF7 /* AVFoundation.framework */; };
 		D3A2DF3B1880BA730096FCF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF3A1880BA730096FCF7 /* UIKit.framework */; };
 		D3A2DF3D1880BA860096FCF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF3C1880BA860096FCF7 /* Foundation.framework */; };
-		D3A2DF3F1880BA980096FCF7 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF3E1880BA980096FCF7 /* opencv2.framework */; };
 		D3A2DF411880BAB80096FCF7 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF401880BAB80096FCF7 /* libstdc++.dylib */; };
 		D3A2DF431880BAE00096FCF7 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF421880BAE00096FCF7 /* libc++.dylib */; };
 		D3A2DF451880BB0C0096FCF7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF441880BB0C0096FCF7 /* QuartzCore.framework */; };
@@ -93,12 +93,12 @@
 		5AEE5B34173C68D80009041E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* IDChecker-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "IDChecker-Info.plist"; path = "../IDChecker-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		D3A2DF341880BA450096FCF7 /* IDCheckerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDCheckerSDK.framework; path = ../../../../Downloads/IDCheckerDemo/Frameworks/IDCheckerSDK.framework; sourceTree = "<group>"; };
+		D354C22F1885C37600E9A4F2 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../src/ios/frameworks/opencv2.framework; sourceTree = "<group>"; };
+		D354C2311885C38400E9A4F2 /* IDCheckerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDCheckerSDK.framework; path = ../../src/ios/frameworks/IDCheckerSDK.framework; sourceTree = "<group>"; };
 		D3A2DF361880BA5F0096FCF7 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D3A2DF381880BA6A0096FCF7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D3A2DF3A1880BA730096FCF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3A2DF3C1880BA860096FCF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D3A2DF3E1880BA980096FCF7 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../../Downloads/IDCheckerDemo/Frameworks/opencv2.framework; sourceTree = "<group>"; };
 		D3A2DF401880BAB80096FCF7 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		D3A2DF421880BAE00096FCF7 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		D3A2DF441880BB0C0096FCF7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -114,8 +114,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3A2DF351880BA450096FCF7 /* IDCheckerSDK.framework in Frameworks */,
-				D3A2DF3F1880BA980096FCF7 /* opencv2.framework in Frameworks */,
+				D354C2321885C38400E9A4F2 /* IDCheckerSDK.framework in Frameworks */,
+				D354C2301885C37600E9A4F2 /* opencv2.framework in Frameworks */,
 				D3A2DF3D1880BA860096FCF7 /* Foundation.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				D3A2DF3B1880BA730096FCF7 /* UIKit.framework in Frameworks */,
@@ -218,18 +218,18 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D354C2311885C38400E9A4F2 /* IDCheckerSDK.framework */,
+				D354C22F1885C37600E9A4F2 /* opencv2.framework */,
 				D3A2DF4A1880BBAA0096FCF7 /* CoreVideo.framework */,
 				D3A2DF481880BB760096FCF7 /* AudioToolbox.framework */,
 				D3A2DF461880BB3C0096FCF7 /* CoreImage.framework */,
 				D3A2DF441880BB0C0096FCF7 /* QuartzCore.framework */,
 				D3A2DF421880BAE00096FCF7 /* libc++.dylib */,
 				D3A2DF401880BAB80096FCF7 /* libstdc++.dylib */,
-				D3A2DF3E1880BA980096FCF7 /* opencv2.framework */,
 				D3A2DF3C1880BA860096FCF7 /* Foundation.framework */,
 				D3A2DF3A1880BA730096FCF7 /* UIKit.framework */,
 				D3A2DF381880BA6A0096FCF7 /* AVFoundation.framework */,
 				D3A2DF361880BA5F0096FCF7 /* ImageIO.framework */,
-				D3A2DF341880BA450096FCF7 /* IDCheckerSDK.framework */,
 				5AEE5B34173C68D80009041E /* CoreLocation.framework */,
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
@@ -474,6 +474,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/brian/Downloads/IDCheckerDemo/Frameworks,
+					"/Users/brian/projects/cordova-plugin-idchecker/src/ios/frameworks",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -511,6 +512,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/brian/Downloads/IDCheckerDemo/Frameworks,
+					"/Users/brian/projects/cordova-plugin-idchecker/src/ios/frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IDChecker/IDChecker-Prefix.pch";

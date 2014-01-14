@@ -36,21 +36,32 @@ var app = {
   // function, we must explicity call 'app.receivedEvent(...);'
   onDeviceReady: function() {
     app.receivedEvent('deviceready');
+      var x = document.getElementById('firstName');
+      x.innerHTML = 'FOO BAR FOO';
+      
       cordova.exec(
       // Register the callback handler
       function callback(data) {
-        alert('got data ' + data);
+        //alert('got data ' + Object.keys(data));
+        //alert(data.origPhoto);
+                   
+        var nameElement = document.getElementById('firstName');
+        var originalImageElement = document.getElementById('originalImage');
+        var processedImageElement = document.getElementById('processedImage');
+        nameElement.innerHTML = data.firstName;
+        originalImageElement.setAttribute('src', 'data:image/png;base64,' + data.origPhoto);
+        processedImageElement.setAttribute('src', 'data:image/png;base64,' + data.processedPhoto);
       },
       // Register the errorHandler
       function errorHandler(err) {
-        alert('Error' + err);
+        alert('Error: ' + err);
       },
       // Define what class to route messages to
       'IDChecker',
       // Execute this method on the above class
       'captureCredentials',
       // An array containing one String (our newly created Date String).
-      [ "US", "Passport" ]
+      [ "US", "DriversLicense" ]
     );
   },
   // Update DOM on a Received Event

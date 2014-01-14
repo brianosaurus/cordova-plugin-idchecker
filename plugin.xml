@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  xmlns:rim="http://www.blackberry.com/ns/widgets"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="com.idchecker.cordova"
+  version="0.2.7">
+  <name>IDChecker</name>
+  <description>IDChecker Plugin</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova,idchecker</keywords>
+  <repo>https://github.com/brianosaurus/cordova-plugin-idchecker</repo>
+  <issue>https://github.com/brianosaurus/cordova-plugin-idchecker/issues</issue>
+
+  <js-module src="www/IDChecker.js" name="IDChecker">
+    <clobbers target="idchecker" />
+  </js-module>
+
+  <!-- android -->
+  <!--platform name="android">
+      <config-file target="res/xml/config.xml" parent="/*">
+          <feature name="Device" >
+              <param name="android-package" value="org.apache.cordova.device.Device"/>
+          </feature>
+      </config-file>
+
+      <source-file src="src/android/Device.java" target-dir="src/org/apache/cordova/device" />
+  </platform-->
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="IDCHecker">
+        <param name="ios-package" value="CDVIDChecker"/>
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/CDVIDChecker.h" />
+    <source-file src="src/ios/CDVIDChecker.m" />
+
+    <!-- system frameworks -->
+    <framework src="libc++.dylib" />
+    <framework src="AudioToolbox.framework" />
+    <framework src="QuartzCore.framework" />
+    <framework src="AssetsLibrary.framework" />
+    <framework src="CoreImage.framework" />
+    <framework src="src/ios/frameworks/IDCheckerSDK.framework" custom="true"/>
+    <framework src="src/ios/frameworks/obencv2.framework" custom="true" />
+    <framework src="src/ios/frameworks/IDCheckerSDK.framework" custom="true" />
+    <framework src="CoreVideo.framework" />
+    <framework src="CoreMedia.framework" />
+    <framework src="AVFoundation.framework" />
+    <framework src="src/ios/frameworks/IDCHeckerDSK.framework" custom="true" />
+    <framework src="UIKit.framework" />
+    <framework src="Foundation.framework" />
+    <framework src="CoreGraphics.framework" />
+  </platform>
+
+</plugin>
