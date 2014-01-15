@@ -43,7 +43,7 @@
     <header-file src="src/ios/CDVIDChecker.h" />
     <source-file src="src/ios/CDVIDChecker.m" />
 
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/IDCheckerSDK" target-dir="IDCheckerSDK.framework" />
+    <resource-file src="src/ios/frameworks/IDCheckerSDK.framework/IDCheckerSDK" target-dir="../../IDCheckerSDK.framework" />
 
     <!-- system frameworks -->
     <framework src="libc++.dylib" />
