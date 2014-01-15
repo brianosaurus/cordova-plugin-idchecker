@@ -43,9 +43,25 @@
     <header-file src="src/ios/CDVIDChecker.h" />
     <source-file src="src/ios/CDVIDChecker.m" />
 
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/IDCheckerSDK" target-dir="../../IDCheckerSDK.framework" framework="true" />
+    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/IDCheckerSDK" target-dir="/IDCheckerSDK.framework" />
+    <source-file src="src/ios/Headers/IDCDocument.h" target-dir="/IDCheckerSDK.framework/Headers" />
+    <source-file src="src/ios/Headers/IDCheckerSDK.h" target-dir="/IDCheckerSDK.framework/Headers" />
+    <source-file src="src/ios/Headers/IDCSettings.h" target-dir="/IDCheckerSDK.framework/Headers" />
+    <source-file src="src/ios/Headers/IDCTypeDefines.h" target-dir="/IDCheckerSDK.framework/Headers" />
+    <source-file src="src/ios/IDCheckerSDK" target-dir="/IDCheckerSDK.framework/" />
+    <source-file src="src/ios/Versions/A/Headers/IDCDocument.h" target-dir="/IDCheckerSDK.framework/Versions/A/Headers" />
+    <source-file src="src/ios/Versions/A/Headers/IDCheckerSDK.h" target-dir="/IDCheckerSDK.framework/Versions/A/Headers" />
+    <source-file src="src/ios/Versions/A/Headers/IDCSettings.h" target-dir="/IDCheckerSDK.framework/Versions/A/Headers" />
+    <source-file src="src/ios/Versions/A/Headers/IDCTypeDefines.h" target-dir="/IDCheckerSDK.framework/Versions/A/Headers" />
+    <source-file src="src/ios/Versions/A/IDCheckerSDK" target-dir="/IDCheckerSDK.framework/Versions/A" />
+    <source-file src="src/ios/Versions/Current/Headers/IDCDocument.h" target-dir="/IDCheckerSDK.framework/Versions/Current/Headers" />
+    <source-file src="src/ios/Versions/Current/Headers/IDCheckerSDK.h" target-dir="/IDCheckerSDK.framework/Versions/Current/Headers" />
+    <source-file src="src/ios/Versions/Current/Headers/IDCSettings.h" target-dir="/IDCheckerSDK.framework/Versions/Current/Headers" />
+    <source-file src="src/ios/Versions/Current/Headers/IDCTypeDefines.h" target-dir="/IDCheckerSDK.framework/Versions/Current/Headers" />
+    <source-file src="src/ios/Versions/Current/IDCheckerSDK" target-dir="/IDCheckerSDK.framework/Versions/Current" />
 
     <!-- system frameworks -->
+    <framework src="IDCheckerSDK.framework" />
     <framework src="libc++.dylib" />
     <framework src="AudioToolbox.framework" />
     <framework src="QuartzCore.framework" />
