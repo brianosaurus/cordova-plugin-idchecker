@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -30,18 +29,8 @@
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
 		5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE5B34173C68D80009041E /* CoreLocation.framework */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
-		D354C2301885C37600E9A4F2 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D354C22F1885C37600E9A4F2 /* opencv2.framework */; };
-		D354C2321885C38400E9A4F2 /* IDCheckerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D354C2311885C38400E9A4F2 /* IDCheckerSDK.framework */; };
 		D3A2DF371880BA5F0096FCF7 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF361880BA5F0096FCF7 /* ImageIO.framework */; };
-		D3A2DF391880BA6A0096FCF7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF381880BA6A0096FCF7 /* AVFoundation.framework */; };
-		D3A2DF3B1880BA730096FCF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF3A1880BA730096FCF7 /* UIKit.framework */; };
-		D3A2DF3D1880BA860096FCF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF3C1880BA860096FCF7 /* Foundation.framework */; };
 		D3A2DF411880BAB80096FCF7 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF401880BAB80096FCF7 /* libstdc++.dylib */; };
-		D3A2DF431880BAE00096FCF7 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF421880BAE00096FCF7 /* libc++.dylib */; };
-		D3A2DF451880BB0C0096FCF7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF441880BB0C0096FCF7 /* QuartzCore.framework */; };
-		D3A2DF471880BB3C0096FCF7 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF461880BB3C0096FCF7 /* CoreImage.framework */; };
-		D3A2DF491880BB760096FCF7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF481880BB760096FCF7 /* AudioToolbox.framework */; };
-		D3A2DF4B1880BBAA0096FCF7 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF4A1880BBAA0096FCF7 /* CoreVideo.framework */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 /* End PBXBuildFile section */
@@ -100,7 +89,6 @@
 		D3A2DF3A1880BA730096FCF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3A2DF3C1880BA860096FCF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3A2DF401880BAB80096FCF7 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		D3A2DF421880BAE00096FCF7 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		D3A2DF441880BB0C0096FCF7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D3A2DF461880BB3C0096FCF7 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		D3A2DF481880BB760096FCF7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -126,7 +114,6 @@
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
 				D3A2DF411880BAB80096FCF7 /* libstdc++.dylib in Frameworks */,
-				D3A2DF431880BAE00096FCF7 /* libc++.dylib in Frameworks */,
 				D3A2DF4B1880BBAA0096FCF7 /* CoreVideo.framework in Frameworks */,
 				D3A2DF491880BB760096FCF7 /* AudioToolbox.framework in Frameworks */,
 				D3A2DF451880BB0C0096FCF7 /* QuartzCore.framework in Frameworks */,
@@ -224,7 +211,6 @@
 				D3A2DF481880BB760096FCF7 /* AudioToolbox.framework */,
 				D3A2DF461880BB3C0096FCF7 /* CoreImage.framework */,
 				D3A2DF441880BB0C0096FCF7 /* QuartzCore.framework */,
-				D3A2DF421880BAE00096FCF7 /* libc++.dylib */,
 				D3A2DF401880BAB80096FCF7 /* libstdc++.dylib */,
 				D3A2DF3C1880BA860096FCF7 /* Foundation.framework */,
 				D3A2DF3A1880BA730096FCF7 /* UIKit.framework */,
@@ -323,7 +309,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 500;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "IDChecker" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -500,6 +486,9 @@
 				);
 				PRODUCT_NAME = IDChecker;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Debug;
 		};
@@ -536,6 +525,9 @@
 				);
 				PRODUCT_NAME = IDChecker;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Release;
 		};

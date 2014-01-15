@@ -26,12 +26,9 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
-    
-    <!-- IDChecker -->
     <feature name="IDChecker">
         <param name="ios-package" value="CDVIDChecker" />
     </feature>
-
     <author email="dev@callback.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>

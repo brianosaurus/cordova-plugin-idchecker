@@ -35,6 +35,8 @@
       </feature>
     </config-file>
 
+    <resource-file src="src/ios/frameworks/IDCheckerSDK.framework" />
+
     <header-file src="src/ios/frameworks/IDCHeckerSDK.framework/Headers/IDCSettings.h" />
     <header-file src="src/ios/frameworks/IDCHeckerSDK.framework/Headers/IDCTypeDefines.h" />
     <header-file src="src/ios/frameworks/IDCHeckerSDK.framework/Headers/IDCheckerSDK.h" />
