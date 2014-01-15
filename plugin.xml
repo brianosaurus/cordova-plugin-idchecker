@@ -40,7 +40,7 @@
     <header-file src="src/ios/frameworks/IDCHeckerSDK.framework/Headers/IDCheckerSDK.h" />
     <header-file src="src/ios/frameworks/IDCHeckerSDK.framework/Headers/IDCDocument.h" />
 
-    <source-file src="src/ios/IDCheckerSDK.dylib" framework="true"/>
+    <source-file src="src/ios/frameworks/IDCHeckerSDK.framework/IDCheckerSDK.dylib" framework="true"/>
 
     <header-file src="src/ios/CDVIDChecker.h" />
     <source-file src="src/ios/CDVIDChecker.m" />

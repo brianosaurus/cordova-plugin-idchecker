@@ -7,7 +7,7 @@
 //
 
 #import "CDVIDChecker.h"
-#import <IDCheckerSDK/IDCheckerSDK.h>
+#import "IDCheckerSDK.h"
 
 @implementation CDVIDChecker
 {
