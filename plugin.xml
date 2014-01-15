@@ -43,6 +43,8 @@
     <header-file src="src/ios/CDVIDChecker.h" />
     <source-file src="src/ios/CDVIDChecker.m" />
 
+    <source-file src="src/ios/frameworks/IDCheckerSDK.framework" target-dir="IDCheckerSDK.framework" framework="true" />
+
     <!-- system frameworks -->
     <framework src="libc++.dylib" />
     <framework src="AudioToolbox.framework" />
@@ -55,6 +57,7 @@
     <framework src="UIKit.framework" />
     <framework src="Foundation.framework" />
     <framework src="CoreGraphics.framework" />
+    <framework src="libstdc++.dylib" />
   </platform>
 
 </plugin>
