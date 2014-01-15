@@ -48,7 +48,6 @@
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Headers/IDCheckerSDK.h" target-dir="IDCheckerSDK.framework/Headers" />
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Headers/IDCSettings.h" target-dir="IDCheckerSDK.framework/Headers" />
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Headers/IDCTypeDefines.h" target-dir="IDCheckerSDK.framework/Headers" />
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/IDCheckerSDK" target-dir="IDCheckerSDK.framework/" />
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/A/Headers/IDCDocument.h" target-dir="IDCheckerSDK.framework/Versions/A/Headers" />
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/A/Headers/IDCheckerSDK.h" target-dir="IDCheckerSDK.framework/Versions/A/Headers" />
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/A/Headers/IDCSettings.h" target-dir="IDCheckerSDK.framework/Versions/A/Headers" />
