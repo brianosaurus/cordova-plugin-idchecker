@@ -35,10 +35,10 @@
       </feature>
     </config-file>
 
-    <header-file src="src/ios/IDCHeckerSDK.framework/Headers/IDCSettings.h" />
-    <header-file src="src/ios/IDCHeckerSDK.framework/Headers/IDCTypeDefines.h" />
-    <header-file src="src/ios/IDCHeckerSDK.framework/Headers/IDCheckerSDK.h" />
-    <header-file src="src/ios/IDCHeckerSDK.framework/Headers/IDCDocument.h" />
+    <header-file src="src/ios/frameworks/IDCHeckerSDK.framework/Headers/IDCSettings.h" />
+    <header-file src="src/ios/frameworks//IDCHeckerSDK.framework/Headers/IDCTypeDefines.h" />
+    <header-file src="src/ios/frameworks/IDCHeckerSDK.framework/Headers/IDCheckerSDK.h" />
+    <header-file src="src/ios/frameworks/IDCHeckerSDK.framework/Headers/IDCDocument.h" />
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/IDCHeckerSDK" framework="true"/>
 
     <header-file src="src/ios/CDVIDChecker.h" />
