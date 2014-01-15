@@ -39,18 +39,16 @@
     <source-file src="src/ios/CDVIDChecker.m" />
 
     <!-- system frameworks -->
+    <framework src="src/ios/frameworks/IDCheckerSDK.framework" custom="true"/>
+    <framework src="src/ios/frameworks/obencv2.framework" custom="true" />
     <framework src="libc++.dylib" />
     <framework src="AudioToolbox.framework" />
     <framework src="QuartzCore.framework" />
     <framework src="AssetsLibrary.framework" />
     <framework src="CoreImage.framework" />
-    <framework src="src/ios/frameworks/IDCheckerSDK.framework" custom="true"/>
-    <framework src="src/ios/frameworks/obencv2.framework" custom="true" />
-    <framework src="src/ios/frameworks/IDCheckerSDK.framework" custom="true" />
     <framework src="CoreVideo.framework" />
     <framework src="CoreMedia.framework" />
     <framework src="AVFoundation.framework" />
-    <framework src="src/ios/frameworks/IDCHeckerDSK.framework" custom="true" />
     <framework src="UIKit.framework" />
     <framework src="Foundation.framework" />
     <framework src="CoreGraphics.framework" />
