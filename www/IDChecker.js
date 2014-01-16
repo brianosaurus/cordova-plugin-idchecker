@@ -42,7 +42,5 @@ IDChecker.prototype = {
   }
 };
 
-alert("in here");
-
 module.exports = new IDChecker();
 
