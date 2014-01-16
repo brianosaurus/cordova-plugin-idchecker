@@ -59,6 +59,7 @@
     <framework src="Foundation.framework" />
     <framework src="CoreGraphics.framework" />
     <framework src="libstdc++.dylib" />
+    <framework src="opencv2.framework" />
   </platform>
 
 </plugin>
