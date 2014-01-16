@@ -63,7 +63,7 @@
 
     <!--framework src="src/ios/frameworks/IDCheckerSDK.framework" weak="true" /-->
 
-    <resource-file src="src/ios/frameworks/IDCheckerSDK.framework" />
+    <resource-file src="src/ios/frameworks/IDCheckerSDK.framework" framework="true" />
 
     <!-- system frameworks -->
     <framework src="opencv2.framework" />
