@@ -18,7 +18,7 @@ function IDChecker() {
   * Get the scanned document. 
   * type must be one of "Passport", "DriversLicense", or "2DBarCode".  Country is a 2 letter country code
  */
-IDChecker.prototype.getInfo = function(successCallback, errorCallback, country, type) {
+IDChecker.prototype.captureCredentials = function(successCallback, errorCallback, country, type) {
     exec(successCallback, errorCallback, "IDChecker", "captureCredentials", [country, type]);
 };
 

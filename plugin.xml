@@ -12,8 +12,14 @@
   <repo>https://github.com/brianosaurus/cordova-plugin-idchecker</repo>
   <issue>https://github.com/brianosaurus/cordova-plugin-idchecker/issues</issue>
 
+
+  <engines>
+    <engine name="cordova" version=">=3.1.0" />
+    <engine name="cordova-android" version=">=3.1.0" />
+  </engines>
+
   <js-module src="www/IDChecker.js" name="IDChecker">
-    <clobbers target="idchecker" />
+    <clobbers target="IDChecker" />
   </js-module>
 
   <!-- android -->
