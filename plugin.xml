@@ -59,8 +59,9 @@
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/Current/Headers/IDCTypeDefines.h" target-dir="IDCheckerSDK.framework/Versions/Current/Headers" />
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/Current/IDCheckerSDK" target-dir="IDCheckerSDK.framework/Versions/Current" />
 
+    <source-file src="src/ios/frameworks/IDCheckerSDK.framework" framework="true" />
+
     <!-- system frameworks -->
-    <framework src="IDCheckerSDK.framework" />
     <framework src="opencv2.framework" />
     <framework src="libc++.dylib" />
     <framework src="AudioToolbox.framework" />
