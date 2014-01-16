@@ -43,26 +43,7 @@
     <header-file src="src/ios/CDVIDChecker.h" />
     <source-file src="src/ios/CDVIDChecker.m" />
 
-    <!--source-file src="src/ios/frameworks/IDCheckerSDK.framework/IDCheckerSDK" target-dir="IDCheckerSDK.framework" />
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Headers/IDCDocument.h" target-dir="IDCheckerSDK.framework/Headers" />
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Headers/IDCheckerSDK.h" target-dir="IDCheckerSDK.framework/Headers" />
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Headers/IDCSettings.h" target-dir="IDCheckerSDK.framework/Headers" />
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Headers/IDCTypeDefines.h" target-dir="IDCheckerSDK.framework/Headers" />
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/A/Headers/IDCDocument.h" target-dir="IDCheckerSDK.framework/Versions/A/Headers" />
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/A/Headers/IDCheckerSDK.h" target-dir="IDCheckerSDK.framework/Versions/A/Headers" />
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/A/Headers/IDCSettings.h" target-dir="IDCheckerSDK.framework/Versions/A/Headers" />
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/A/Headers/IDCTypeDefines.h" target-dir="IDCheckerSDK.framework/Versions/A/Headers" />
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/A/IDCheckerSDK" target-dir="IDCheckerSDK.framework/Versions/A" />
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/Current/Headers/IDCDocument.h" target-dir="IDCheckerSDK.framework/Versions/Current/Headers" />
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/Current/Headers/IDCheckerSDK.h" target-dir="IDCheckerSDK.framework/Versions/Current/Headers" />
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/Current/Headers/IDCSettings.h" target-dir="IDCheckerSDK.framework/Versions/Current/Headers" />
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/Current/Headers/IDCTypeDefines.h" target-dir="IDCheckerSDK.framework/Versions/Current/Headers" />
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/Current/IDCheckerSDK" target-dir="IDCheckerSDK.framework/Versions/Current" /-->
-
-    <resource-file src="src/ios/frameworks/IDCheckerSDK.framework" />
-    <framework src="IDCheckerSDK.framework" />
-
-    <!--framework src="src/ios/frameworks/IDCheckerSDK.framework" custom="true"/-->
+    <source-file src="src/ios/libIDCheckerSDK.a" framework="true"/>
 
     <!-- system frameworks -->
     <framework src="opencv2.framework" />
