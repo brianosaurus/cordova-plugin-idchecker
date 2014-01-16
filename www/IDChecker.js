@@ -11,15 +11,16 @@ var argscheck = require('cordova/argscheck'),
 /**
  */
 function IDChecker() {
-    var me = this;
-}
+  var me = this;
+  this.serviceName = "IDCheckerSDK";
+};
 
 /**
   * Get the scanned document. 
   * type must be one of "Passport", "DriversLicense", or "2DBarCode".  Country is a 2 letter country code
  */
 IDChecker.prototype.captureCredentials = function(successCallback, errorCallback, country, type) {
-    exec(successCallback, errorCallback, "IDChecker", "captureCredentials", [country, type]);
+  exec(successCallback, errorCallback, "IDChecker", "captureCredentials", [country, type]);
 };
 
-module.exports = new IDChecker();
+module.exports = IDChecker;

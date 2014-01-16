@@ -36,7 +36,7 @@
   <!-- ios -->
   <platform name="ios">
     <config-file target="config.xml" parent="/*">
-      <feature name="IDCHecker">
+      <feature name="IDCheckerSDK">
         <param name="ios-package" value="CDVIDChecker"/>
       </feature>
     </config-file>
