@@ -14,8 +14,7 @@
 
 
   <engines>
-    <engine name="cordova" version=">=3.1.0" />
-    <engine name="cordova-android" version=">=3.1.0" />
+    <engine name="cordova" version=">=3.0.0" />
   </engines>
 
   <js-module src="www/IDChecker.js" name="IDChecker">
@@ -35,9 +34,10 @@
 
   <!-- ios -->
   <platform name="ios">
-    <config-file target="config.xml" parent="/*">
-      <feature name="IDCheckerSDK">
+    <config-file target="config.xml" parent="/widget">
+      <feature name="CDVIDChecker">
         <param name="ios-package" value="CDVIDChecker"/>
+        <param name="onload" value="true" />
       </feature>
     </config-file>
 
