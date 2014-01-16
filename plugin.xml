@@ -35,10 +35,10 @@
       </feature>
     </config-file>
 
-    <!--header-file src="src/ios/frameworks/IDCHeckerSDK.framework/Headers/IDCSettings.h" />
+    <header-file src="src/ios/frameworks/IDCHeckerSDK.framework/Headers/IDCSettings.h" />
     <header-file src="src/ios/frameworks/IDCHeckerSDK.framework/Headers/IDCTypeDefines.h" />
     <header-file src="src/ios/frameworks/IDCHeckerSDK.framework/Headers/IDCheckerSDK.h" />
-    <header-file src="src/ios/frameworks/IDCHeckerSDK.framework/Headers/IDCDocument.h" /-->
+    <header-file src="src/ios/frameworks/IDCHeckerSDK.framework/Headers/IDCDocument.h" />
 
     <header-file src="src/ios/CDVIDChecker.h" />
     <source-file src="src/ios/CDVIDChecker.m" />
@@ -57,13 +57,12 @@
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/Current/Headers/IDCheckerSDK.h" target-dir="IDCheckerSDK.framework/Versions/Current/Headers" />
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/Current/Headers/IDCSettings.h" target-dir="IDCheckerSDK.framework/Versions/Current/Headers" />
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/Current/Headers/IDCTypeDefines.h" target-dir="IDCheckerSDK.framework/Versions/Current/Headers" />
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/Current/IDCheckerSDK" target-dir="IDCheckerSDK.framework/Versions/Current" />
+    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/Current/IDCheckerSDK" target-dir="IDCheckerSDK.framework/Versions/Current" /-->
 
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework" framework="true" /-->
+    <resource-file src="src/ios/frameworks/IDCheckerSDK.framework" />
+    <framework src="Resources/IDCheckerSDK.framework" />
 
-    <!--framework src="src/ios/frameworks/IDCheckerSDK.framework" weak="true" /-->
-
-    <framework-file src="src/ios/frameworks/IDCheckerSDK.framework" custom="true"/>
+    <!--framework src="src/ios/frameworks/IDCheckerSDK.framework" custom="true"/-->
 
     <!-- system frameworks -->
     <framework src="opencv2.framework" />
