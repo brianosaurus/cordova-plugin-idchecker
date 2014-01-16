@@ -43,7 +43,7 @@
     <header-file src="src/ios/CDVIDChecker.h" />
     <source-file src="src/ios/CDVIDChecker.m" />
 
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework/IDCheckerSDK" target-dir="IDCheckerSDK.framework" />
+    <!--source-file src="src/ios/frameworks/IDCheckerSDK.framework/IDCheckerSDK" target-dir="IDCheckerSDK.framework" />
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Headers/IDCDocument.h" target-dir="IDCheckerSDK.framework/Headers" />
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Headers/IDCheckerSDK.h" target-dir="IDCheckerSDK.framework/Headers" />
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Headers/IDCSettings.h" target-dir="IDCheckerSDK.framework/Headers" />
@@ -59,7 +59,9 @@
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/Current/Headers/IDCTypeDefines.h" target-dir="IDCheckerSDK.framework/Versions/Current/Headers" />
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/Current/IDCheckerSDK" target-dir="IDCheckerSDK.framework/Versions/Current" />
 
-    <source-file src="src/ios/frameworks/IDCheckerSDK.framework" framework="true" />
+    <source-file src="src/ios/frameworks/IDCheckerSDK.framework" framework="true" /-->
+
+    <framework src="src/ios/frameworks/IDCheckerSDK.framework" weak="true" />
 
     <!-- system frameworks -->
     <framework src="opencv2.framework" />
