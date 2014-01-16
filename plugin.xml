@@ -47,7 +47,6 @@
     <source-file src="src/ios/libopencv2.a" framework="true"/>
 
     <!-- system frameworks -->
-    <framework src="opencv2.framework" />
     <framework src="libc++.dylib" />
     <framework src="AudioToolbox.framework" />
     <framework src="QuartzCore.framework" />
