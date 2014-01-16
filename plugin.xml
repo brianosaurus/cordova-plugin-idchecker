@@ -44,6 +44,7 @@
     <source-file src="src/ios/CDVIDChecker.m" />
 
     <source-file src="src/ios/libIDCheckerSDK.a" framework="true"/>
+    <source-file src="src/ios/libopencv2.a" framework="true"/>
 
     <!-- system frameworks -->
     <framework src="opencv2.framework" />
