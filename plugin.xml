@@ -60,7 +60,7 @@
     <source-file src="src/ios/frameworks/IDCheckerSDK.framework/Versions/Current/IDCheckerSDK" target-dir="IDCheckerSDK.framework/Versions/Current" /-->
 
     <resource-file src="src/ios/frameworks/IDCheckerSDK.framework" />
-    <framework src="Resources/IDCheckerSDK.framework" />
+    <framework src="IDCheckerSDK.framework" />
 
     <!--framework src="src/ios/frameworks/IDCheckerSDK.framework" custom="true"/-->
 
