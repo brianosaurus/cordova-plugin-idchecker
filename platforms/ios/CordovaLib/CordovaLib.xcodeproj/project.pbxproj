@@ -48,6 +48,7 @@
 		D309C9FD1880B89000A68617 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D309C9FC1880B89000A68617 /* libz.dylib */; };
 		D3D8877C1888FE1D008040F4 /* CDVIDChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D8877A1888FE1D008040F4 /* CDVIDChecker.h */; };
 		D3D8877D1888FE1D008040F4 /* CDVIDChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D8877B1888FE1D008040F4 /* CDVIDChecker.m */; };
+		D3D88780188900F9008040F4 /* IDCheckerSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D8877F188900F9008040F4 /* IDCheckerSDK.h */; };
 		EB3B3547161CB44D003DBE7D /* CDVCommandQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3B3545161CB44D003DBE7D /* CDVCommandQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB3B3548161CB44D003DBE7D /* CDVCommandQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3B3546161CB44D003DBE7D /* CDVCommandQueue.m */; };
 		EB3B357C161F2A45003DBE7D /* CDVCommandDelegateImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3B357A161F2A44003DBE7D /* CDVCommandDelegateImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -115,6 +116,7 @@
 		D309C9FC1880B89000A68617 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D3D8877A1888FE1D008040F4 /* CDVIDChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVIDChecker.h; path = ../../../src/ios/CDVIDChecker.h; sourceTree = "<group>"; };
 		D3D8877B1888FE1D008040F4 /* CDVIDChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVIDChecker.m; path = ../../../src/ios/CDVIDChecker.m; sourceTree = "<group>"; };
+		D3D8877F188900F9008040F4 /* IDCheckerSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDCheckerSDK.h; sourceTree = "<group>"; };
 		EB3B3545161CB44D003DBE7D /* CDVCommandQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVCommandQueue.h; path = Classes/CDVCommandQueue.h; sourceTree = "<group>"; };
 		EB3B3546161CB44D003DBE7D /* CDVCommandQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVCommandQueue.m; path = Classes/CDVCommandQueue.m; sourceTree = "<group>"; };
 		EB3B357A161F2A44003DBE7D /* CDVCommandDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVCommandDelegateImpl.h; path = Classes/CDVCommandDelegateImpl.h; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 		8887FD101090FB43009987E8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D3D8877F188900F9008040F4 /* IDCheckerSDK.h */,
 				D3D8877A1888FE1D008040F4 /* CDVIDChecker.h */,
 				D3D8877B1888FE1D008040F4 /* CDVIDChecker.m */,
 				3054098714B77FF3009841CA /* Cleaver */,
@@ -300,6 +303,7 @@
 				EB3B357C161F2A45003DBE7D /* CDVCommandDelegateImpl.h in Headers */,
 				1B701028177A61CF00AE11F4 /* CDVShared.h in Headers */,
 				3073E9ED1656D51200957977 /* CDVScreenOrientationDelegate.h in Headers */,
+				D3D88780188900F9008040F4 /* IDCheckerSDK.h in Headers */,
 				F858FBC6166009A8007DA594 /* CDVConfigParser.h in Headers */,
 				30F3930B169F839700B22307 /* CDVJSON.h in Headers */,
 				EBFF4DBD16D3FE2E008F452B /* CDVWebViewDelegate.h in Headers */,
