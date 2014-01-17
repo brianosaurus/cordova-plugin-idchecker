@@ -99,13 +99,16 @@
     } else {
         docType = kIDCDocTypePassport;
     }
+
+    CDVPluginResult* pluginResult = nil;
+    NSString* myarg = [command.arguments objectAtIndex:0];
     
-    NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithCapacity:17];
-    [dict setObject:@"Blah de blah" forKey:@"guid"];
-    
-    // build result into data structure to return via callback
-    CDVPluginResult *res = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:dict];
-    [self.commandDelegate sendPluginResult:res callbackId:command.callbackId];
+    if (myarg != nil) {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+    } else {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Arg was null"];
+    }
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
     
     return;
     
