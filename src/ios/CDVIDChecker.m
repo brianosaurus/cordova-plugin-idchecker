@@ -7,7 +7,7 @@
 //
 
 #import "CDVIDChecker.h"
-#import "IDCheckerSDK.h"
+#import <IDCheckerSDK/IDCheckerSDK.h>
 
 @implementation CDVIDChecker
 {
@@ -90,6 +90,21 @@
       docType = kIDCDocTypePassport;
   }
   
+    
+    CDVPluginResult* pluginResult = nil;
+    NSString* myarg = [command.arguments objectAtIndex:0];
+    
+    if (myarg != nil) {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+    } else {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Arg was null"];
+    }
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    // this if foo bar foo
+    
+    return;
+    
+    
   //doc type and country are not used yet but will be in the future
   IDCDocument *doc = [[IDCDocument alloc] initWithDocType:docType country:country];
   doc.cameraHelpText = _cameraHelpText;

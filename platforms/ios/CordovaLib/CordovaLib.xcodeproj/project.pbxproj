@@ -46,8 +46,8 @@
 		D309C9FA1880B87B00A68617 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686357AE141002F100DF4CF2 /* CoreGraphics.framework */; };
 		D309C9FB1880B88300A68617 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686357AC141002F100DF4CF2 /* Foundation.framework */; };
 		D309C9FD1880B89000A68617 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D309C9FC1880B89000A68617 /* libz.dylib */; };
-		D3A2DF321880B9890096FCF7 /* CDVIDChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = D3A2DF301880B9890096FCF7 /* CDVIDChecker.h */; };
-		D3A2DF331880B9890096FCF7 /* CDVIDChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A2DF311880B9890096FCF7 /* CDVIDChecker.m */; };
+		D3D8877C1888FE1D008040F4 /* CDVIDChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D8877A1888FE1D008040F4 /* CDVIDChecker.h */; };
+		D3D8877D1888FE1D008040F4 /* CDVIDChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D8877B1888FE1D008040F4 /* CDVIDChecker.m */; };
 		EB3B3547161CB44D003DBE7D /* CDVCommandQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3B3545161CB44D003DBE7D /* CDVCommandQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB3B3548161CB44D003DBE7D /* CDVCommandQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3B3546161CB44D003DBE7D /* CDVCommandQueue.m */; };
 		EB3B357C161F2A45003DBE7D /* CDVCommandDelegateImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3B357A161F2A44003DBE7D /* CDVCommandDelegateImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -113,8 +113,8 @@
 		AA747D9E0F9514B9006C5449 /* CordovaLib_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CordovaLib_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		D309C9F61880B80B00A68617 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D309C9FC1880B89000A68617 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		D3A2DF301880B9890096FCF7 /* CDVIDChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVIDChecker.h; sourceTree = "<group>"; };
-		D3A2DF311880B9890096FCF7 /* CDVIDChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVIDChecker.m; sourceTree = "<group>"; };
+		D3D8877A1888FE1D008040F4 /* CDVIDChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVIDChecker.h; path = ../../../src/ios/CDVIDChecker.h; sourceTree = "<group>"; };
+		D3D8877B1888FE1D008040F4 /* CDVIDChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVIDChecker.m; path = ../../../src/ios/CDVIDChecker.m; sourceTree = "<group>"; };
 		EB3B3545161CB44D003DBE7D /* CDVCommandQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVCommandQueue.h; path = Classes/CDVCommandQueue.h; sourceTree = "<group>"; };
 		EB3B3546161CB44D003DBE7D /* CDVCommandQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVCommandQueue.m; path = Classes/CDVCommandQueue.m; sourceTree = "<group>"; };
 		EB3B357A161F2A44003DBE7D /* CDVCommandDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVCommandDelegateImpl.h; path = Classes/CDVCommandDelegateImpl.h; sourceTree = "<group>"; };
@@ -264,8 +264,8 @@
 		8887FD101090FB43009987E8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D3A2DF301880B9890096FCF7 /* CDVIDChecker.h */,
-				D3A2DF311880B9890096FCF7 /* CDVIDChecker.m */,
+				D3D8877A1888FE1D008040F4 /* CDVIDChecker.h */,
+				D3D8877B1888FE1D008040F4 /* CDVIDChecker.m */,
 				3054098714B77FF3009841CA /* Cleaver */,
 				888700D710922F56009987E8 /* Commands */,
 				888700D910923009009987E8 /* Util */,
@@ -303,7 +303,7 @@
 				F858FBC6166009A8007DA594 /* CDVConfigParser.h in Headers */,
 				30F3930B169F839700B22307 /* CDVJSON.h in Headers */,
 				EBFF4DBD16D3FE2E008F452B /* CDVWebViewDelegate.h in Headers */,
-				D3A2DF321880B9890096FCF7 /* CDVIDChecker.h in Headers */,
+				D3D8877C1888FE1D008040F4 /* CDVIDChecker.h in Headers */,
 				EB96673B16A8970A00D86CDF /* CDVUserAgentUtil.h in Headers */,
 				7E14B5A81705050A0032169E /* CDVTimer.h in Headers */,
 			);
@@ -375,7 +375,7 @@
 				30C684821406CB38004C1A8E /* CDVWhitelist.m in Sources */,
 				30C684961407044B004C1A8E /* CDVURLProtocol.m in Sources */,
 				8852C43C14B65FD800F0E735 /* CDVViewController.m in Sources */,
-				D3A2DF331880B9890096FCF7 /* CDVIDChecker.m in Sources */,
+				D3D8877D1888FE1D008040F4 /* CDVIDChecker.m in Sources */,
 				3034979E1513D56A0090E688 /* CDVLocalStorage.m in Sources */,
 				3062D122151D0EDB000D9128 /* UIDevice+Extensions.m in Sources */,
 				EBA3557515ABD38C00F4DE24 /* NSArray+Comparisons.m in Sources */,
