@@ -100,11 +100,19 @@
         docType = kIDCDocTypePassport;
     }
     
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithCapacity:17];
+    [dict setObject:@"Blah de blah" forKey:@"guid"];
+    
+    // build result into data structure to return via callback
+    CDVPluginResult *res = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:dict];
+    [self.commandDelegate sendPluginResult:res callbackId:command.callbackId];
+    
+    return;
+    
     //doc type and country are not used yet but will be in the future
     IDCDocument *doc = [[IDCDocument alloc] initWithDocType:docType country:country];
     doc.cameraHelpText = _cameraHelpText;
     doc.documentDimensions = CGSizeMake(85.6, 54.f);
-    
     
     [[IDCheckerSDK shared] startProcessForDocument:doc viewControllerToPresent:self.viewController quality:kIDCQualityTypeMedium pictureTakenBlock:^(BOOL pictureTaken) {
         if(pictureTaken){
