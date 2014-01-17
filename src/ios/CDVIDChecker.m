@@ -108,7 +108,7 @@
   settings.clientRef = @"HelloBit";
   settings.password = @"B8it6Wi2s2e";
   settings.userId = @2286;
-  //_cameraHelpText = @"Put Butt Here";
+  _cameraHelpText = @"Put Butt Here";
   
   //settings.userId = @6;
   //settings.password = @"haarlem";
