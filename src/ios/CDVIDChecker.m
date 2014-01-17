@@ -145,9 +145,6 @@
   doc.cameraHelpText = _cameraHelpText;
   doc.documentDimensions = CGSizeMake(85.6, 54.f);
   
-  CDVPluginResult* pluginResult = nil;
-  
-  
   [[IDCheckerSDK shared] startProcessForDocument:doc viewControllerToPresent:self.viewController
                                          quality:kIDCQualityTypeMedium pictureTakenBlock:^(BOOL pictureTaken) {
       CDVPluginResult* pluginResult = nil;
