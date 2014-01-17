@@ -20,20 +20,20 @@
     self = [super initWithWebView:theWebView];
     if (self != nil) {
         NSDictionary *config = self.commandDelegate.settings;
-        _cameraHelpText = [config valueForKey:@"com.idchecker.cameraHelpText"];
+        //_cameraHelpText = [config valueForKey:@"com.idchecker.cameraHelpText"];
         
         IDCSettings *settings = [[IDCSettings alloc] init];
         
         // slightly ardrous
-        NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
-        [f setNumberStyle:NSNumberFormatterDecimalStyle];
-        settings.userId = [f numberFromString:[config valueForKey:@"com.idchecker.userID"]];
-        settings.password = [config valueForKey:@"com.idchecker.password"];
+        //NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+        //[f setNumberStyle:NSNumberFormatterDecimalStyle];
+        //settings.userId = [f numberFromString:[config valueForKey:@"com.idchecker.userID"]];
+        //settings.password = [config valueForKey:@"com.idchecker.password"];
         
         settings.webUserId = @0;
-        settings.agent = [config valueForKey:@"com.idchecker.agent"];
-        settings.devAPIToken = [config valueForKey:@"com.idchecker.devAPIToken"];
-        settings.clientRef = [config valueForKey:@"com.idchecker.clientRef"];
+        //settings.agent = [config valueForKey:@"com.idchecker.agent"];
+        //settings.devAPIToken = [config valueForKey:@"com.idchecker.devAPIToken"];
+        //settings.clientRef = [config valueForKey:@"com.idchecker.clientRef"];
         settings.isUsingAutoCapture = YES;
         
         _cameraHelpText = @"Put Butt Here";

@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -29,6 +30,17 @@
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
 		5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE5B34173C68D80009041E /* CoreLocation.framework */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
+		D39A18151888DB0A004580BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF3A1880BA730096FCF7 /* UIKit.framework */; };
+		D39A18161888DB15004580BD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF4A1880BBAA0096FCF7 /* CoreVideo.framework */; };
+		D39A18171888DB4B004580BD /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF461880BB3C0096FCF7 /* CoreImage.framework */; };
+		D39A18191888DB64004580BD /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D39A18181888DB64004580BD /* libc++.dylib */; };
+		D39A181B1888DB73004580BD /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39A181A1888DB73004580BD /* CoreAudio.framework */; };
+		D39A181C1888DB8D004580BD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF481880BB760096FCF7 /* AudioToolbox.framework */; };
+		D39A181D1888DBA5004580BD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF381880BA6A0096FCF7 /* AVFoundation.framework */; };
+		D39A181E1888DBDF004580BD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF441880BB0C0096FCF7 /* QuartzCore.framework */; };
+		D39A18201888DC03004580BD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39A181F1888DC03004580BD /* CoreMedia.framework */; };
+		D39A18231888E5BC004580BD /* libopencv2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D39A18211888E5BC004580BD /* libopencv2.a */; };
+		D39A18241888E5BC004580BD /* libIDCheckerSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D39A18221888E5BC004580BD /* libIDCheckerSDK.a */; };
 		D3A2DF371880BA5F0096FCF7 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF361880BA5F0096FCF7 /* ImageIO.framework */; };
 		D3A2DF411880BAB80096FCF7 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2DF401880BAB80096FCF7 /* libstdc++.dylib */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
@@ -82,8 +94,11 @@
 		5AEE5B34173C68D80009041E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* IDChecker-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "IDChecker-Info.plist"; path = "../IDChecker-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		D354C22F1885C37600E9A4F2 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../src/ios/frameworks/opencv2.framework; sourceTree = "<group>"; };
-		D354C2311885C38400E9A4F2 /* IDCheckerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDCheckerSDK.framework; path = ../../src/ios/frameworks/IDCheckerSDK.framework; sourceTree = "<group>"; };
+		D39A18181888DB64004580BD /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		D39A181A1888DB73004580BD /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		D39A181F1888DC03004580BD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D39A18211888E5BC004580BD /* libopencv2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv2.a; path = ../../src/ios/libopencv2.a; sourceTree = "<group>"; };
+		D39A18221888E5BC004580BD /* libIDCheckerSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIDCheckerSDK.a; path = ../../src/ios/libIDCheckerSDK.a; sourceTree = "<group>"; };
 		D3A2DF361880BA5F0096FCF7 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D3A2DF381880BA6A0096FCF7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D3A2DF3A1880BA730096FCF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -102,22 +117,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D354C2321885C38400E9A4F2 /* IDCheckerSDK.framework in Frameworks */,
-				D354C2301885C37600E9A4F2 /* opencv2.framework in Frameworks */,
-				D3A2DF3D1880BA860096FCF7 /* Foundation.framework in Frameworks */,
+				D39A18231888E5BC004580BD /* libopencv2.a in Frameworks */,
+				D39A18241888E5BC004580BD /* libIDCheckerSDK.a in Frameworks */,
+				D39A18201888DC03004580BD /* CoreMedia.framework in Frameworks */,
+				D39A181E1888DBDF004580BD /* QuartzCore.framework in Frameworks */,
+				D39A181D1888DBA5004580BD /* AVFoundation.framework in Frameworks */,
+				D39A181C1888DB8D004580BD /* AudioToolbox.framework in Frameworks */,
+				D39A181B1888DB73004580BD /* CoreAudio.framework in Frameworks */,
+				D39A18191888DB64004580BD /* libc++.dylib in Frameworks */,
+				D39A18171888DB4B004580BD /* CoreImage.framework in Frameworks */,
+				D39A18161888DB15004580BD /* CoreVideo.framework in Frameworks */,
+				D39A18151888DB0A004580BD /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
-				D3A2DF3B1880BA730096FCF7 /* UIKit.framework in Frameworks */,
-				D3A2DF391880BA6A0096FCF7 /* AVFoundation.framework in Frameworks */,
 				D3A2DF371880BA5F0096FCF7 /* ImageIO.framework in Frameworks */,
 				5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
 				D3A2DF411880BAB80096FCF7 /* libstdc++.dylib in Frameworks */,
-				D3A2DF4B1880BBAA0096FCF7 /* CoreVideo.framework in Frameworks */,
-				D3A2DF491880BB760096FCF7 /* AudioToolbox.framework in Frameworks */,
-				D3A2DF451880BB0C0096FCF7 /* QuartzCore.framework in Frameworks */,
-				D3A2DF471880BB3C0096FCF7 /* CoreImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +222,11 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D354C2311885C38400E9A4F2 /* IDCheckerSDK.framework */,
-				D354C22F1885C37600E9A4F2 /* opencv2.framework */,
+				D39A18211888E5BC004580BD /* libopencv2.a */,
+				D39A18221888E5BC004580BD /* libIDCheckerSDK.a */,
+				D39A181F1888DC03004580BD /* CoreMedia.framework */,
+				D39A181A1888DB73004580BD /* CoreAudio.framework */,
+				D39A18181888DB64004580BD /* libc++.dylib */,
 				D3A2DF4A1880BBAA0096FCF7 /* CoreVideo.framework */,
 				D3A2DF481880BB760096FCF7 /* AudioToolbox.framework */,
 				D3A2DF461880BB3C0096FCF7 /* CoreImage.framework */,
@@ -470,6 +490,10 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "IDChecker/IDChecker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/brian/projects/cordova-plugin-idchecker/src/ios",
+				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -486,9 +510,6 @@
 				);
 				PRODUCT_NAME = IDChecker;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-				);
 			};
 			name = Debug;
 		};
@@ -509,6 +530,10 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "IDChecker/IDChecker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/brian/projects/cordova-plugin-idchecker/src/ios",
+				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -525,9 +550,6 @@
 				);
 				PRODUCT_NAME = IDChecker;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-				);
 			};
 			name = Release;
 		};
