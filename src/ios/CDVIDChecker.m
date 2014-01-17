@@ -137,7 +137,20 @@
   [_waitView addSubview:ai];
   [ai startAnimating];
   _waitView.alpha = 0.f;
+  
+  CDVPluginResult* pluginResult = nil;
+  NSString* myarg = [command.arguments objectAtIndex:0];
+  
+  if (myarg != nil) {
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"Here 1"];
+  } else {
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Arg was null"];
+  }
+  [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+  
+  return;
 
+  
   
   
   //doc type and country are not used yet but will be in the future
