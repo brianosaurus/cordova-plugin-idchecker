@@ -91,32 +91,45 @@
   }
   
     
-    
   //doc type and country are not used yet but will be in the future
-  IDCDocument *doc = [[IDCDocument alloc] initWithDocType:docType country:country];
+  IDCDocument *doc = [[IDCDocument alloc] initWithDocType:kIDCDocTypeDriversLicense country:@"US"];
   doc.cameraHelpText = _cameraHelpText;
   doc.documentDimensions = CGSizeMake(85.6, 54.f);
-    
-    CDVPluginResult* pluginResult = nil;
-    NSString* myarg = [command.arguments objectAtIndex:0];
-    
-    if (myarg != nil) {
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    } else {
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Arg was null"];
-    }
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-    
-    return;
-    
+        
 
   
   [[IDCheckerSDK shared] startProcessForDocument:doc viewControllerToPresent:self.viewController quality:kIDCQualityTypeMedium pictureTakenBlock:^(BOOL pictureTaken) {
+      CDVPluginResult* pluginResult = nil;
+      NSString* myarg = [command.arguments objectAtIndex:0];
+      
+      if (myarg != nil) {
+          pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+      } else {
+          pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Arg was null"];
+      }
+      [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+      
+      return;
+
+      
       if(pictureTaken){
           //Callback That Picture is Taken
           [self showWait:YES];
       }
   } uploadDoneBlock:^(IDCDocument *doc) {
+      
+      CDVPluginResult* pluginResult = nil;
+      NSString* myarg = [command.arguments objectAtIndex:0];
+      
+      if (myarg != nil) {
+          pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+      } else {
+          pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Arg was null"];
+      }
+      [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+      
+      return;
+
       if(!doc.error) {
           // Callback with data
           //we save the guid so we can use it to refresh the data later
