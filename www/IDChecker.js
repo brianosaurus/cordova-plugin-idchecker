@@ -27,7 +27,7 @@ IDChecker.prototype = {
     if(arguments.length == 2) {
       args = []
     }
-    ret = cordova.exec(
+    ret = exec(
       callback, // called when signature capture is successful
       this.failure, // called when signature capture encounters an error
       'CDVIDChecker', // Tell cordova that we want to run "PushNotificationPlugin"
