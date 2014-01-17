@@ -89,26 +89,64 @@
       docType = kIDCDocTypePassport;
   }
   
-    
-  //doc type and country are not used yet but will be in the future
-  IDCDocument *doc = [[IDCDocument alloc] initWithDocType:kIDCDocTypeDriversLicense country:@"US"];
-  doc.cameraHelpText = @"Place Butt Here";
-  doc.documentDimensions = CGSizeMake(85.6, 54.f);
-    
-    CDVPluginResult* pluginResult = nil;
-    
-    if (self.viewController) {
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"have controller"];
+  IDCSettings *settings = [[IDCSettings alloc] init];
+  
+  // slightly ardrous
+  //NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+  //[f setNumberStyle:NSNumberFormatterDecimalStyle];
+  //settings.userId = [f numberFromString:[config valueForKey:@"com.idchecker.userID"]];
+  //settings.password = [config valueForKey:@"com.idchecker.password"];
+  
+  settings.webUserId = @0;
+  //settings.agent = [config valueForKey:@"com.idchecker.agent"];
+  //settings.devAPIToken = [config valueForKey:@"com.idchecker.devAPIToken"];
+  //settings.clientRef = [config valueForKey:@"com.idchecker.clientRef"];
+  settings.isUsingAutoCapture = YES;
+  
+  settings.agent = @"HelloBit";
+  settings.devAPIToken = @"YU6R6-JTFPX-HBPAB";
+  settings.clientRef = @"HelloBit";
+  settings.password = @"B8it6Wi2s2e";
+  settings.userId = @2286;
+  //_cameraHelpText = @"Put Butt Here";
+  
+  //settings.userId = @6;
+  //settings.password = @"haarlem";
+  //settings.webUserId = @0;
+  //settings.agent = @"IDCheckeriOSdemo App";
+  //settings.devAPIToken = @"IOSSDKDEMO";
+  //settings.clientRef = @"IDCheckeriOSDemo";
+  
+  [[IDCheckerSDK shared] loadWithSettings:settings block:^(NSError *error) {
+    if(!error) {
+      //self.captureAndUploadBtn.enabled = YES;
+      //self.uploadBtn.enabled = YES;
+      //self.uploadMultiBtn.enabled = YES;
+      //self.uploadAndCloseBtn.enabled = YES;
     }
-    else {
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"dont have controller"];
-    }
-    
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-    
-    return;
-    
+  }];
+  
+  // loading spinner
+  _waitView = [[UIView alloc] initWithFrame:self.webView.bounds];
+  [self.webView addSubview:_waitView];
+  UIView *semiTransBackground = [[UIView alloc] initWithFrame:_waitView.bounds];
+  semiTransBackground.backgroundColor = [UIColor colorWithWhite:0.f alpha:.8];
+  [_waitView addSubview:semiTransBackground];
+  UIActivityIndicatorView *ai = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+  ai.frame = _waitView.bounds;
+  [_waitView addSubview:ai];
+  [ai startAnimating];
+  _waitView.alpha = 0.f;
 
+  
+  
+  //doc type and country are not used yet but will be in the future
+  IDCDocument *doc = [[IDCDocument alloc] initWithDocType:docType country:country];
+  doc.cameraHelpText = _cameraHelpText;
+  doc.documentDimensions = CGSizeMake(85.6, 54.f);
+  
+  CDVPluginResult* pluginResult = nil;
+  
   
   [[IDCheckerSDK shared] startProcessForDocument:doc viewControllerToPresent:self.viewController
                                          quality:kIDCQualityTypeMedium pictureTakenBlock:^(BOOL pictureTaken) {
