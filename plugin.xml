@@ -46,8 +46,8 @@
     <header-file src="src/ios/frameworks/IDCHeckerSDK.framework/Headers/IDCheckerSDK.h" />
     <header-file src="src/ios/frameworks/IDCHeckerSDK.framework/Headers/IDCDocument.h" />
 
-    <header-file src="platform/ios/CordovaLib/CDVIDChecker.h" />
-    <source-file src="platform/ios/CordovaLib/CDVIDChecker.m" />
+    <header-file src="platform/ios/CDVIDChecker.h" />
+    <source-file src="platform/ios/CDVIDChecker.m" />
 
     <source-file src="src/ios/libIDCheckerSDK.a" framework="true"/>
     <source-file src="src/ios/libopencv2.a" framework="true" />
