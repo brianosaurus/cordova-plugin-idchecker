@@ -97,7 +97,7 @@
         
 
     
-    if (!self.viewController) {
+
         CDVPluginResult* pluginResult = nil;
         NSString* myarg = [command.arguments objectAtIndex:0];
         
@@ -109,7 +109,8 @@
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
         
         return;
-    }
+                                    
+                                         
   
   [[IDCheckerSDK shared] startProcessForDocument:doc viewControllerToPresent:self.viewController
                                          quality:kIDCQualityTypeMedium pictureTakenBlock:^(BOOL pictureTaken) {

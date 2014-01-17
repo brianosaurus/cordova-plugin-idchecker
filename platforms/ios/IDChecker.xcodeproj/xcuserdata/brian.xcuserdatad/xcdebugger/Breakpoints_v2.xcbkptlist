@@ -260,11 +260,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../src/ios/CDVIDChecker.m"
-            timestampString = "411635306.11412"
+            timestampString = "411635627.724251"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "-captureCredentials:"
             landmarkType = "5">
          </BreakpointContent>
