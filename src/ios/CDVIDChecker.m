@@ -97,8 +97,22 @@
   doc.documentDimensions = CGSizeMake(85.6, 54.f);
         
 
+    if (!self.viewController) {
+        CDVPluginResult* pluginResult = nil;
+        NSString* myarg = [command.arguments objectAtIndex:0];
+        
+        if (myarg != nil) {
+            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+        } else {
+            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Arg was null"];
+        }
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+        
+        return;
+    }
   
-  [[IDCheckerSDK shared] startProcessForDocument:doc viewControllerToPresent:self.viewController quality:kIDCQualityTypeMedium pictureTakenBlock:^(BOOL pictureTaken) {
+  [[IDCheckerSDK shared] startProcessForDocument:doc viewControllerToPresent:self.viewController
+                                         quality:kIDCQualityTypeMedium pictureTakenBlock:^(BOOL pictureTaken) {
       CDVPluginResult* pluginResult = nil;
       NSString* myarg = [command.arguments objectAtIndex:0];
       
@@ -193,6 +207,19 @@
               }
           }];
       } else {
+          
+          CDVPluginResult* pluginResult = nil;
+          NSString* myarg = [command.arguments objectAtIndex:0];
+          
+          if (myarg != nil) {
+              pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+          } else {
+              pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Arg was null"];
+          }
+          [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+          
+          return;
+
           // Call error Callback
           CDVPluginResult *res = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
           [self.commandDelegate sendPluginResult:res callbackId:command.callbackId];
