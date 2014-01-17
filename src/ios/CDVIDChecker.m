@@ -94,6 +94,21 @@
   IDCDocument *doc = [[IDCDocument alloc] initWithDocType:kIDCDocTypeDriversLicense country:@"US"];
   doc.cameraHelpText = @"Place Butt Here";
   doc.documentDimensions = CGSizeMake(85.6, 54.f);
+    
+    CDVPluginResult* pluginResult = nil;
+    
+    if (self.viewController) {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"have controller"];
+    }
+    else {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"dont have controller"];
+    }
+    
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    
+    return;
+    
+
   
   [[IDCheckerSDK shared] startProcessForDocument:doc viewControllerToPresent:self.viewController
                                          quality:kIDCQualityTypeMedium pictureTakenBlock:^(BOOL pictureTaken) {
