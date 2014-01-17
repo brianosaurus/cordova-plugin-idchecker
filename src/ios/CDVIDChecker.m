@@ -102,7 +102,7 @@
         NSString* myarg = [command.arguments objectAtIndex:0];
         
         if (myarg != nil) {
-            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:_cameraHelpText];
         } else {
             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Arg was null"];
         }
@@ -117,7 +117,7 @@
       NSString* myarg = [command.arguments objectAtIndex:0];
       
       if (myarg != nil) {
-          pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+          pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:_cameraHelpText];
       } else {
           pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Arg was null"];
       }
