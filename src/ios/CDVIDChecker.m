@@ -41,7 +41,7 @@
         settings.clientRef = @"HelloBit";
         settings.password = @"B8it6Wi2s2e";
         settings.userId = @2286;
-        _cameraHelpText = @"Put Butt Here";
+        //_cameraHelpText = @"Put Butt Here";
         
         //settings.userId = @6;
         //settings.password = @"haarlem";
@@ -92,25 +92,8 @@
     
   //doc type and country are not used yet but will be in the future
   IDCDocument *doc = [[IDCDocument alloc] initWithDocType:kIDCDocTypeDriversLicense country:@"US"];
-  doc.cameraHelpText = _cameraHelpText;
+  doc.cameraHelpText = @"Place Butt Here";
   doc.documentDimensions = CGSizeMake(85.6, 54.f);
-        
-
-    
-
-        CDVPluginResult* pluginResult = nil;
-        NSString* myarg = [command.arguments objectAtIndex:0];
-        
-        if (myarg != nil) {
-            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:_cameraHelpText];
-        } else {
-            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Arg was null"];
-        }
-        [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-        
-        return;
-                                    
-                                         
   
   [[IDCheckerSDK shared] startProcessForDocument:doc viewControllerToPresent:self.viewController
                                          quality:kIDCQualityTypeMedium pictureTakenBlock:^(BOOL pictureTaken) {
@@ -118,7 +101,7 @@
       NSString* myarg = [command.arguments objectAtIndex:0];
       
       if (myarg != nil) {
-          pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:_cameraHelpText];
+          pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"Here 1"];
       } else {
           pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Arg was null"];
       }
@@ -137,7 +120,7 @@
       NSString* myarg = [command.arguments objectAtIndex:0];
       
       if (myarg != nil) {
-          pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+          pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK  messageAsString:@"Here 2"];
       } else {
           pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Arg was null"];
       }
