@@ -70,7 +70,6 @@
         [_waitView addSubview:ai];
         [ai startAnimating];
         _waitView.alpha = 0.f;
-        
     }
     
     return self;
@@ -97,6 +96,7 @@
   doc.documentDimensions = CGSizeMake(85.6, 54.f);
         
 
+    
     if (!self.viewController) {
         CDVPluginResult* pluginResult = nil;
         NSString* myarg = [command.arguments objectAtIndex:0];
