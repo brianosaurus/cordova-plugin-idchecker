@@ -67,30 +67,6 @@ var app = {
       [ "US", "DriversLicense" ]
     );
     
-    cordova.exec(
-      // Register the callback handler
-      function callback(data) {
-        //alert('got data ' + Object.keys(data));
-        //alert(data.origPhoto);
-       
-        var nameElement = document.getElementById('firstName');
-        var originalImageElement = document.getElementById('originalImage');
-        var processedImageElement = document.getElementById('processedImage');
-        nameElement.innerHTML = data.firstName;
-        originalImageElement.setAttribute('src', 'data:image/png;base64,' + data.origPhoto);
-        processedImageElement.setAttribute('src', 'data:image/png;base64,' + data.processedPhoto);
-      },
-      // Register the errorHandler
-      function errorHandler(err) {
-        alert('Error: ' + err);
-      },
-      // Define what class to route messages to
-      'CDVIDChecker',
-      // Execute this method on the above class
-      'captureCredentials',
-      // An array containing one String (our newly created Date String).
-      [ "US", "2DBarCode" ]
-    );
   },
   // Update DOM on a Received Event
   receivedEvent: function(id) {
