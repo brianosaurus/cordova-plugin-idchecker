@@ -38,8 +38,11 @@ var app = {
     app.receivedEvent('deviceready');
       var x = document.getElementById('firstName');
       x.innerHTML = 'FOO BAR FOO';
-      
-      cordova.exec(
+  
+    cordova.exec(function(){}, function() {}, 'CDVIDChecker', 'initializeClientCredentials',
+                 ['HelloBit', 'YU6R6-JTFPX-HBPAB', 'HelloBit', 'B8it6Wi2s2e', '2286', 'Place ID Here']);
+    
+    cordova.exec(
       // Register the callback handler
       function callback(data) {
         //alert('got data ' + Object.keys(data));
@@ -57,11 +60,36 @@ var app = {
         alert('Error: ' + err);
       },
       // Define what class to route messages to
-      'IDChecker',
+      'CDVIDChecker',
       // Execute this method on the above class
       'captureCredentials',
       // An array containing one String (our newly created Date String).
       [ "US", "DriversLicense" ]
+    );
+    
+    cordova.exec(
+      // Register the callback handler
+      function callback(data) {
+        //alert('got data ' + Object.keys(data));
+        //alert(data.origPhoto);
+       
+        var nameElement = document.getElementById('firstName');
+        var originalImageElement = document.getElementById('originalImage');
+        var processedImageElement = document.getElementById('processedImage');
+        nameElement.innerHTML = data.firstName;
+        originalImageElement.setAttribute('src', 'data:image/png;base64,' + data.origPhoto);
+        processedImageElement.setAttribute('src', 'data:image/png;base64,' + data.processedPhoto);
+      },
+      // Register the errorHandler
+      function errorHandler(err) {
+        alert('Error: ' + err);
+      },
+      // Define what class to route messages to
+      'CDVIDChecker',
+      // Execute this method on the above class
+      'captureCredentials',
+      // An array containing one String (our newly created Date String).
+      [ "US", "2DBarCode" ]
     );
   },
   // Update DOM on a Received Event

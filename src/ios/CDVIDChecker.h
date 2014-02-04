@@ -14,6 +14,7 @@
     NSString *_cameraHelpText;
 }
 
+- (void)initializeClientCredentials:(CDVInvokedUrlCommand *)command;
 - (void)captureCredentials:(CDVInvokedUrlCommand *)command;
 
 @end

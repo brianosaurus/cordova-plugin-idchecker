@@ -9,38 +9,21 @@ var argscheck = require('cordova/argscheck'),
     cordova = require('cordova');
 
 /**
+  * pass in required arguments for the client
  */
-function IDChecker() {
+function IDChecker(agent, apiToken, clientRef, password, userId, cameraHelpText) {
   var me = this;
+  var callback = function() {};
+  exec(callback, callback, 'CDVIDChecker', 'initializeClientCredentials', [ agent, apiToken, clientRef, password, userId, cameraHelpText ]); 
 };
 
 /**
   * Get the scanned document. 
   * type must be one of "Passport", "DriversLicense", or "2DBarCode".  Country is a 2 letter country code
  */
-IDChecker.prototype = {
-  failure: function(msg) {
-    console.log('IDChecker error: ' + msg);
-  },
-
-  call_native: function (callback, name, args) {
-    if(arguments.length == 2) {
-      args = []
-    }
-    ret = exec(
-      callback, // called when signature capture is successful
-      this.failure, // called when signature capture encounters an error
-      'CDVIDChecker', // Tell cordova that we want to run "PushNotificationPlugin"
-      name, // Tell the plugin the action we want to perform
-      args); // List of arguments to the plugin
-
-    return ret;
-  },
-  
-  captureCredentials: function(successCallback, country, type) {
-    this.call_native(successCallback, "captureCredentials", [country, type]);
-  }
+IDChecker.prototype.captureCredentials: function(success, failure, country, type) {
+    exec(success, failure, 'CDVIDChecker', 'captureCredentials', [country, type]);
 };
 
-module.exports = new IDChecker();
+module.exports = IDChecker;
 
