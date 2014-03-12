@@ -49,8 +49,9 @@
     <header-file src="src/ios/CDVIDChecker.h" />
     <source-file src="src/ios/CDVIDChecker.m" />
 
-    <source-file src="src/ios/Frameworks/IDCheckerSDK.framework" framework="true"/>
-    <source-file src="src/ios/Frameworks/opencv2.framework" framework="true" />
+    <!-- custom frameworks -->
+    <framework src="src/ios/Frameworks/IDCheckerSDK.framework" custom="true"/>
+    <framework src="src/ios/Frameworks/opencv2.framework" custom="true" />
 
     <!-- system frameworks -->
     <framework src="libsqlite3.dylib" />
