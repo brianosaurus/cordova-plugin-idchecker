@@ -44,6 +44,12 @@
  */
 - (void)takePicture:(IDCDocument *)document viewControllerToPresent:(UIViewController *)vc quality:(IDCQualityType)quality pictureTakenBlock:(IDCDocumentProcessedBlock)pictureTakenBlock;
 
+
+/**
+ * Send a document taken with the -takePicture method to IDchecker for OCR processing
+ */
+- (void)uploadDocumentForOcr:(IDCDocument *)document ocrResultBlock:(IDCDocumentProcessedBlock)ocrResultBlock;
+
 /**
  * Fetch more accurate data from server for an uploaded document.
  * Please note that -uploadColorImageForIDCProcessing has to be done first.
@@ -76,6 +82,11 @@
 /**
  * returns a version number for the sdk
  */
-- (CGFloat)sdkVersion;
++ (CGFloat)sdkVersion;
+
+/**
+ * returns a build number for the sdk
+ */
++ (NSInteger)sdkBuild;
 
 @end
