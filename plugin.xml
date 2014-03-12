@@ -54,9 +54,9 @@
     <framework src="src/ios/Frameworks/opencv2.framework" custom="true" />
 
     <!-- system frameworks -->
+    <framework src="AudioToolbox.framework" />
     <framework src="libsqlite3.dylib" />
     <framework src="libc++.dylib" />
-    <framework src="AudioToolbox.framework" />
     <framework src="QuartzCore.framework" />
     <framework src="AssetsLibrary.framework" />
     <framework src="CoreImage.framework" />
